@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/services/">
+  <title>Portfolio - TechNova Solutions</title>
+  <meta name="description" content="Explore our portfolio of successful projects including web applications, mobile apps, and digital solutions we've delivered for our clients.">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-code"></i> TechNova Solutions
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Our Portfolio</h1>
+      <p class="lead">Showcasing our successful projects and digital solutions</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Filter -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="web">Web Development</button>
+        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ecommerce">E-commerce</button>
+        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="cloud">Cloud Solutions</button>
+      </div>
+      
+      <div class="row g-4" id="portfolio-grid">
+        <!-- E-Commerce Platform -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=E-Commerce+Platform" alt="E-Commerce Platform" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">ShopSmart E-Commerce</h5>
+              <p class="card-text">A modern e-commerce platform with advanced features including real-time inventory, payment processing, and analytics dashboard.</p>
+              <div class="portfolio-tech mb-3">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fitness Tracking App -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/06B6D4/FFFFFF?text=Fitness+App" alt="Fitness Tracking App" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">FitTrack Mobile App</h5>
+              <p class="card-text">Cross-platform fitness tracking app with workout plans, progress monitoring, and social features for fitness enthusiasts.</p>
+              <div class="portfolio-tech mb-3">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>Redux</span>
+                <span>HealthKit</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">App Store</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Business Analytics Dashboard -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/22C55E/FFFFFF?text=Analytics+Dashboard" alt="Business Analytics Dashboard" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">BizInsights Dashboard</h5>
+              <p class="card-text">Comprehensive business intelligence dashboard with real-time data visualization and predictive analytics for enterprise clients.</p>
+              <div class="portfolio-tech mb-3">
+                <span>Vue.js</span>
+                <span>D3.js</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Restaurant Management System -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/E11D48/FFFFFF?text=Restaurant+System" alt="Restaurant Management System" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">DineEasy POS System</h5>
+              <p class="card-text">Complete restaurant management system with POS, inventory tracking, online ordering, and customer loyalty program.</p>
+              <div class="portfolio-tech mb-3">
+                <span>Angular</span>
+                <span>Express.js</span>
+                <span>MySQL</span>
+                <span>Socket.io</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Healthcare App -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/7C3AED/FFFFFF?text=Healthcare+App" alt="Healthcare Mobile App" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">MediConnect App</h5>
+              <p class="card-text">Telemedicine platform connecting patients with healthcare providers, featuring video consultations and medical record management.</p>
+              <div class="portfolio-tech mb-3">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>WebRTC</span>
+                <span>HIPAA Compliant</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">App Store</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cloud Migration Project -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="cloud">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/F59E0B/FFFFFF?text=Cloud+Migration" alt="Cloud Migration" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Enterprise Cloud Migration</h5>
+              <p class="card-text">Large-scale cloud migration project moving legacy systems to AWS, including database migration and application modernization.</p>
+              <div class="portfolio-tech mb-3">
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">Case Study</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Learning Management System -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/10B981/FFFFFF?text=LMS+Platform" alt="Learning Management System" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">EduLearn LMS</h5>
+              <p class="card-text">Comprehensive learning management system with course creation, student progress tracking, and interactive assessments.</p>
+              <div class="portfolio-tech mb-3">
+                <span>Laravel</span>
+                <span>Vue.js</span>
+                <span>MySQL</span>
+                <span>SCORM</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- IoT Dashboard -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/6366F1/FFFFFF?text=IoT+Dashboard" alt="IoT Monitoring Dashboard" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">SmartCity IoT Dashboard</h5>
+              <p class="card-text">Real-time monitoring dashboard for smart city infrastructure, displaying sensor data, alerts, and predictive maintenance insights.</p>
+              <div class="portfolio-tech mb-3">
+                <span>React</span>
+                <span>WebSocket</span>
+                <span>MQTT</span>
+                <span>TimescaleDB</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FinTech App -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250/DC2626/FFFFFF?text=FinTech+App" alt="FinTech Mobile App" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">PaySecure Wallet</h5>
+              <p class="card-text">Secure mobile payment solution with biometric authentication, NFC payments, and comprehensive transaction history.</p>
+              <div class="portfolio-tech mb-3">
+                <span>Swift</span>
+                <span>Kotlin</span>
+                <span>Blockchain</span>
+                <span>PCI DSS</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-primary btn-sm">App Store</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="newsletter">
+    <div class="container text-center">
+      <h3>Have a Project in Mind?</h3>
+      <p>Let's discuss how we can bring your vision to life</p>
+      <a href="contact.html" class="btn btn-light btn-lg">Start Your Project</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h5>TechNova Solutions</h5>
+          <p>Leading provider of digital solutions and technology consulting services. Transforming businesses through innovation and excellence.</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/technovasolutions" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/technovasolutions" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/technovasolutions" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+            <li><a href="services.html">Consulting</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope me-2"></i> info@technovasolutions.com</li>
+            <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> 123 Tech Street, Silicon Valley, CA 94043</li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      
+      <div class="text-center">
+        <p>&copy; 2024 TechNova Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+  
+  <!-- Portfolio Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          const filterValue = button.getAttribute('data-filter');
+          
+          portfolioItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
